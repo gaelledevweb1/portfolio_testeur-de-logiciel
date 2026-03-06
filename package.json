@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/gaelledevweb1/portfolio_testeur-de-logiciel#readme",
   "devDependencies": {
-    "cypress": "^15.11.0"
+    "@types/node": "^25.3.5",
+    "cypress": "^15.11.0",
+    "typescript": "^5.9.3"
   }
 }
