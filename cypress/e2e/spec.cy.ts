@@ -36,17 +36,20 @@ describe('freshMarket page - catalogue',()=>{
     cy.visit('/panier-shop.html');
   });
 
+  //  sc-01-A
   // ! Absence de H1;  le slogan si bien définit peut donner indication aux utilisateur d'etre sur la bonne marque donc sur le bon site si  ceux-ci sont bien definit,  ainsi que le sous titre h2 notre catalogue pour  donner  des indications precises aux utilisateurs sur ce qu'ils observent
   // it('verifie que tu as un titre au chargement de la page', () => {
     
   // });
 
+  //  sc-01-B
   it('verifie que ta grille de produit contient 12 produits', () => {
    
     cy.get('[data-testid="products-grid"]').should('be.visible').find('[data-testid="product-card"]');
     cy.get('[data-testid="product-card"]').should('have.length',12);
   });
 
+  //  sc-01-C
   it(' dans la grille de produit, chaque produit doivent contenir  un nom, une categorie, un prix', () => {
 
     cy.get('[data-testid="products-grid"]').should('be.visible').find('[data-testid="product-card"]').as('productCard');
@@ -68,7 +71,8 @@ describe('freshMarket page - catalogue',()=>{
       
   });
 
-   it.only(' les produits, qui affiche la propriéte original price, doivent correspondrent à mon objet fixture products.json', () => {
+  //  sc-01-D  encore en cours de travail non finis
+   it(' les produits, qui affiche la propriéte original price, doivent correspondrent à mon objet fixture products.json', () => {
     //  1ere etape selectionnner les produits qui ont la propriete original price dans la grille de produit
      cy.get('[data-testid="products-grid"]').find('[data-testid="product-card"]').as('productCard');
      cy.get('@productCard').find('[data-testid="product-price-original"]').as('productOriginalPrice').should('have.length',3);
@@ -94,10 +98,12 @@ describe('freshMarket page - catalogue',()=>{
 
    });
 
+//  sc-01-E
   // it('dans la grille de produits, l\'affichage des produits en stocks et en ruptures, avec leurs propriétes et valeurs doivent correspondre à mon objet fixture products.json ', () => {
     
   // });
 
+  //  sc-01-F
   it('verifie la présence du panier et son contenu', () => {
     cy.get('[data-testid="cart-panel"]').should('be.visible').find('h2').as('h2Panier');
     cy.get('@h2Panier').should('contain', 'Mon panier').find('[data-testid="cart-item-count"]').as('CardItemCountPanier');
