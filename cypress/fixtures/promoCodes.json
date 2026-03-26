@@ -1,0 +1,8 @@
+{
+    "valid": [
+    { "code": "FRESH10", "percent": 10, "message": "Code \"FRESH10\" appliqué" },
+    { "code": "SAVE20",  "percent": 20, "message": "Code \"SAVE20\" appliqué"  },
+    { "code": "BIENVENUE", "percent": 15 }
+  ],
+  "invalid": ["ABCDEF", "PROMO99", ""]
+}

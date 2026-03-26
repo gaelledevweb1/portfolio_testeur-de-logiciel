@@ -36,7 +36,7 @@ export default defineConfig({
       // })
        const _ = import('typescript') // yup, dev dependencies, j'ai du mettre import car require ne fonctionnait pas ( cf : https://dev.to/nishanthan-k/understanding-require-vs-import-in-javascript-a-practical-guide-4p8l)
     },
-     baseUrl: 'http://localhost:8080',
+     baseUrl: 'http://localhost/fresh-market',
   },
 })
 

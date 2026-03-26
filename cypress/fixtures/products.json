@@ -1,0 +1,22 @@
+{
+  
+
+
+
+    "pommes": { "id": 1, "name": "Pommes Gala", "price": "2,49 €", "category": "fruits" },
+  "bananesPromo": { "id": 2, "name": "Bananes bio", "originalPrice": "2,29 €","category": "fruits" },
+  "fraises": { "id": 3, "name": "Fraises 500g", "price": "3,99 €", "category": "fruits" },
+"oranges": { "id": 4, "name": "Oranges filet", "price": "2,79 €", "category": "fruits" },
+"Courgettes": { "id": 5, "name": "Courgettes", "price": "1,49 €", "category": "légumes" },
+"TomatesPromo": { "id": 6, "name": "Tomates cerises", "originalPrice": "3,49 €", "category": "légumes" },
+"Brocoli": { "id": 7, "name": "Brocoli", "price": "1,99 €", "category": "légumes" },
+"Carottes": { "id": 8, "name": "Carottes 1kg", "price": "1,29 €", "category": "légumes" },
+"Pâtes": { "id": 9, "name": "Pâtes rigatoni", "price": "1,59 €", "category": "épicerie" },
+"HuilePromo": { "id": 10, "name": "Huile d'olive", "originalPrice": "7,99 €", "category": "épicerie" },
+"Riz": { "id": 11, "name": "Riz basmati", "price": "2,19 €", "category": "épicerie" },
+"Miel": { "id": 12, "name": "Miel artisanal", "price": "7,90 €", "category": "épicerie" },
+
+
+
+  "rupture": { "oranges": 4, "carottes": 8 }
+}
